@@ -1,0 +1,12 @@
+<div class="card-body">
+    <h2 class="card-title text-gray-500">Contact {{contact.id}}</h2>
+    <span class="font-bold">
+        {{contact.first_name}} {{contact.last_name}}
+      </span>
+    <p class="text-sm text-gray-500">{{contact.phone}}</p>
+    <div class="card-actions justify-end mt-5">
+        <button (click)="onEdit()" class="btn btn-info">Edit</button>
+        <button (click)="deleteContact()" class="btn btn-error">Delete</button>
+        <a routerLink="/contacts/{{contact.id}}" class="btn btn-accent">More</a>
+    </div>
+</div>

@@ -1,0 +1,101 @@
+<form [formGroup]="contactsForm" (ngSubmit)="onSubmit()" class="card-body">
+    <div class="grid grid-cols-2 gap-4">
+        <div class="border-2 border-base-300 rounded-xl">
+            <h1 class="mx-10 pt-10 text-accent">Contact Information</h1>
+            <div class="grid grid-cols-2 gap-4 p-10">
+
+                <div class="form-control">
+                    <label class="label">
+                        <span class="label-text">First Name</span>
+                    </label>
+                    <input type="text" formControlName="first_name" placeholder="John"
+                           class="input input-bordered" [required]="true"/>
+                </div>
+
+                <div class="form-control">
+                    <label class="label">
+                        <span class="label-text">Last Name</span>
+                    </label>
+                    <input type="text" formControlName="last_name" placeholder="Doe"
+                           class="input input-bordered" required/>
+                </div>
+                <div class="form-control">
+                    <label class="label">
+                        <span class="label-text">Email</span>
+                    </label>
+                    <input type="email" formControlName="email" placeholder="johndoe@example.com"
+                           class="input input-bordered" required/>
+                </div>
+                <div class="form-control">
+                    <label class="label">
+                        <span class="label-text">Phone</span>
+                    </label>
+                    <input type="text" formControlName="phone" placeholder="012-34-56-789"
+                           class="input input-bordered" required/>
+                </div>
+                <div class="form-control">
+                    <label class="label">
+                        <span class="label-text">Birthday</span>
+                    </label>
+                    <input type="date" formControlName="birthday" placeholder=""
+                           class="input input-bordered" required/>
+                </div>
+                <div class="form-control">
+                    <label class="label">
+                        <span class="label-text">Sex</span>
+                    </label>
+                    <select formControlName="sex" class="select select-bordered">
+                        <option disabled selected>Select...</option>
+                        <option [value]="SexEnum.MALE">Male</option>
+                        <option [value]="SexEnum.FEMALE">Female</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div formGroupName="address" class="border-2 border-base-300 rounded-xl">
+            <h1 class="mx-10 pt-10 text-accent">Address</h1>
+            <div class="grid grid-cols-2 gap-4 p-10">
+                <div class="form-control">
+                    <label class="label">
+                        <span class="label-text">City</span>
+                    </label>
+                    <input type="text" formControlName="city" placeholder="Kyiv"
+                           class="input input-bordered" required/>
+                </div>
+                <div class="form-control">
+                    <label class="label">
+                        <span class="label-text">Country</span>
+                    </label>
+                    <input type="text" formControlName="country" placeholder="Ukraine"
+                           class="input input-bordered" required/>
+                </div>
+                <div class="form-control">
+                    <label class="label">
+                        <span class="label-text">Postal Code</span>
+                    </label>
+                    <input type="text" formControlName="postal_code" placeholder="01001"
+                           class="input input-bordered" required/>
+                </div>
+                <div class="form-control">
+                    <label class="label">
+                        <span class="label-text">Street</span>
+                    </label>
+                    <input type="text" formControlName="street" placeholder="Hreshchatyk"
+                           class="input input-bordered" required/>
+                </div>
+                <div class="form-control">
+                    <label class="label">
+                        <span class="label-text">Street Number</span>
+                    </label>
+                    <input type="number" formControlName="street_num" min="0" placeholder="123"
+                           class="input input-bordered" required/>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-control mt-6 flex items-center">
+        <button class="btn btn-primary w-1/2" [disabled]="!contactsForm.valid">Create</button>
+    </div>
+</form>
