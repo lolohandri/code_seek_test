@@ -1,56 +1,50 @@
 {
-  "hash": "c91cd114",
-  "configHash": "9cfd64cf",
-  "lockfileHash": "7e262a34",
-  "browserHash": "a68c9d12",
+  "hash": "a0e27d6e",
+  "configHash": "b01b0abe",
+  "lockfileHash": "b5e59f33",
+  "browserHash": "66f79877",
   "optimized": {
     "@angular/common": {
       "src": "../../../../../node_modules/@angular/common/fesm2022/common.mjs",
       "file": "@angular_common.js",
-      "fileHash": "92821f02",
+      "fileHash": "13a3b404",
       "needsInterop": false
     },
     "@angular/core": {
       "src": "../../../../../node_modules/@angular/core/fesm2022/core.mjs",
       "file": "@angular_core.js",
-      "fileHash": "411f1466",
+      "fileHash": "1efae4c5",
       "needsInterop": false
     },
     "@angular/forms": {
       "src": "../../../../../node_modules/@angular/forms/fesm2022/forms.mjs",
       "file": "@angular_forms.js",
-      "fileHash": "88e8e0b9",
+      "fileHash": "8d710e17",
       "needsInterop": false
     },
     "@angular/platform-browser": {
       "src": "../../../../../node_modules/@angular/platform-browser/fesm2022/platform-browser.mjs",
       "file": "@angular_platform-browser.js",
-      "fileHash": "599c76d4",
+      "fileHash": "b83f6463",
       "needsInterop": false
     },
     "@angular/router": {
       "src": "../../../../../node_modules/@angular/router/fesm2022/router.mjs",
       "file": "@angular_router.js",
-      "fileHash": "7637e19f",
+      "fileHash": "9cc349d4",
       "needsInterop": false
     },
     "moment": {
       "src": "../../../../../node_modules/moment/moment.js",
       "file": "moment.js",
-      "fileHash": "b7150013",
+      "fileHash": "1e2d527c",
       "needsInterop": true
     },
     "rxjs": {
       "src": "../../../../../node_modules/rxjs/dist/esm5/index.js",
       "file": "rxjs.js",
-      "fileHash": "6a4502d2",
+      "fileHash": "f1048749",
       "needsInterop": false
-    },
-    "short-unique-id": {
-      "src": "../../../../../node_modules/short-unique-id/dist/short-unique-id.js",
-      "file": "short-unique-id.js",
-      "fileHash": "890169bb",
-      "needsInterop": true
     }
   },
   "chunks": {
